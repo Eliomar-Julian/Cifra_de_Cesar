@@ -12,3 +12,7 @@
 ```
 -c senha 5
 ```
+### __uso para decriptografar__ [param > senha]
+`
+-d senha
+`
