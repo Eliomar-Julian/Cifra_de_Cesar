@@ -19,7 +19,7 @@
 -d senha
 `
 ### um pequeno trecho de codigo
-```
+~~~
 from string import ascii_letters
 from sys import argv
 
@@ -38,5 +38,4 @@ def cripta(senha: str, chave: int) -> str:
         nova_senha = nova_senha + alfabeto[(chave)%len(alfabeto)]
     except:
         pass
-
-```
+ ~~~
