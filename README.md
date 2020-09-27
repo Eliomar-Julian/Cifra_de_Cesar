@@ -19,8 +19,18 @@
 -d senha
 `
 ### um pequeno trecho de codigo
-`
-x in senha:
+```
+from string import ascii_letters
+from sys import argv
+
+alfabeto = ascii_letters + "0123456789"
+
+def cripta(senha: str, chave: int) -> str:
+    lista_alfa = list()
+    nova_senha = str()
+    for x in alfabeto:
+        lista_alfa.append(x)
+    for x in senha:
         posi = lista_alfa.index(x)
         nova_senha = nova_senha + lista_alfa[(posi + chave)%len(alfabeto)]
     
@@ -29,5 +39,4 @@ x in senha:
     except:
         pass
 
-    return nova_senha
-    `
+```
