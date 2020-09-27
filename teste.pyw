@@ -17,7 +17,6 @@ def cripta(senha: str, chave: int) -> str:
     except:
         pass
 
-    
     return nova_senha
 
 def decripta(senha: str) -> str:
