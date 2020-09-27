@@ -18,3 +18,16 @@
 `
 -d senha
 `
+### um pequeno trecho de codigo
+`
+x in senha:
+        posi = lista_alfa.index(x)
+        nova_senha = nova_senha + lista_alfa[(posi + chave)%len(alfabeto)]
+    
+    try:
+        nova_senha = nova_senha + alfabeto[(chave)%len(alfabeto)]
+    except:
+        pass
+
+    return nova_senha
+    `
