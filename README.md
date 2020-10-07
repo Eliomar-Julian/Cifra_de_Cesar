@@ -9,7 +9,7 @@ deve ser usada via CLI.
 
 
 ### __uso para criptografar__ [param > senha > chave ]
-python.exe -c senha 5
+-c senha 5
 
 ### __uso para decriptografar__ [param > senha]
-python.exe -d senha
+-d senha
